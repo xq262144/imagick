@@ -5,7 +5,8 @@
 package imagick
 
 /*
-#cgo LDFLAGS: -ljpeg -lpng -lwebp -lz -lgomp -lm -lbz2
+#cgo linux LDFLAGS: -lgomp
+#cgo LDFLAGS: -ljpeg -lpng -lwebp -lz -lm -lbz2
 #cgo !no_pkgconfig pkg-config: MagickWand MagickCore
 */
 import "C"
